@@ -16,9 +16,10 @@ function App() {
   ];
 
   return (
-    <div className="app">
-      <h1 className="title">Product List</h1>
-      <div className="product-grid">
+    <div className="min-h-screen bg-gray-100 p-6">
+      <h1 className="text-4xl font-bold text-center mb-8">Product List</h1>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {products.map((product) => (
           <Card
             key={product.id}
